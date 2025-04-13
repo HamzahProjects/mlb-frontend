@@ -5,7 +5,8 @@ export default function GamePredictions() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://mlb-backend-k3uj.onrender.com/predict")
+    fetch('https://mlb-backend-k3uj.onrender.com/predictions/games')
+
       .then(res => res.json())
       .then(setData);
   }, []);

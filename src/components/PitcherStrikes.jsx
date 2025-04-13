@@ -6,6 +6,7 @@ export default function PitcherStrikes() {
 
   useEffect(() => {
     fetch('https://mlb-backend-k3uj.onrender.com/predictions/strikeouts')
+
       .then(res => res.json())
       .then(setPitchers);
   }, []);

@@ -6,7 +6,8 @@ export default function YardWatch() {
 
   useEffect(() => {
     
-    fetch("https://mlb-backend-k3uj.onrender.com/yardwatch")
+    fetch('https://mlb-backend-k3uj.onrender.com/predictions/homers')
+
 
       .then(res => res.json())
       .then(setPlayers);
